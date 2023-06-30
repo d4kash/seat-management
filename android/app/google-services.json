@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093715874564",
+    "project_id": "u-seat-manag",
+    "storage_bucket": "u-seat-manag.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093715874564:android:3786451be21717d8fa3651",
+        "android_client_info": {
+          "package_name": "com.example.seat_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPyRfGdeXH5dfyxPlnOgYZzJZNIkl17GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
