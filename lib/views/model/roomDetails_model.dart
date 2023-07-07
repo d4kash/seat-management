@@ -6,6 +6,8 @@ import 'dart:convert';
 
 RoomDetailModel roomDetailModelFromJson(String str) =>
     RoomDetailModel.fromJson(json.decode(str));
+RoomDetailModel roomDetailModelDocFromJson(var str) =>
+    RoomDetailModel.fromJson(str);
 
 String roomDetailModelToJson(RoomDetailModel data) =>
     json.encode(data.toJson());

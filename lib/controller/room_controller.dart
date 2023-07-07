@@ -32,4 +32,19 @@ class RoomController extends GetxController {
       print(e);
     }
   }
+
+  Future getRoomDetails(
+    String roomNo,
+  ) async {
+    // RoomDetailModel? modelData;
+    var data;
+    try {
+      await userCollection.doc(roomNo).get().then((value) {
+        data = roomDetailModelDocFromJson(value.data() as Map<String, dynamic>);
+      });
+      return data;
+    } on FirebaseFirestore catch (e) {
+      print(e);
+    }
+  }
 }

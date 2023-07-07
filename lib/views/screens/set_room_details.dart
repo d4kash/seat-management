@@ -135,8 +135,10 @@ class RoomDetails extends GetView<RoomController> {
                             sPBenchRight:
                                 controller.studRightBench.text.trim());
 
-                        controller.setRoomDetails(
-                            controller.roomController.text.trim(), data);
+                        // controller.setRoomDetails(
+                        //     controller.roomController.text.trim(), data);
+                        controller.getRoomDetails(
+                            controller.roomController.text.trim());
                       },
                       style: ElevatedButton.styleFrom(
                           fixedSize: const Size(250, 50)),

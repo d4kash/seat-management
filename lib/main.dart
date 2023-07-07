@@ -20,6 +20,9 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       initialBinding: RoomDetailsBinding(),
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
       getPages: [
         GetPage(name: "/", page: () => const MainView()),
       ],

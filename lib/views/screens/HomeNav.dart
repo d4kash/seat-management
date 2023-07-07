@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:seat_management/views/screens/arrange_seat.dart';
 import 'package:seat_management/views/screens/room_list.dart';
 import 'package:seat_management/views/screens/set_room_details.dart';
+import 'package:seat_management/widgets/roll_no_card.dart';
 import 'package:side_navigation/side_navigation.dart';
 
 class MainView extends StatefulWidget {
@@ -15,10 +16,13 @@ class MainView extends StatefulWidget {
 class _MainViewState extends State<MainView> {
   List<Widget> views = [
     Center(
-      child: RoomDetails(),
+      child: RollNoCard(),
     ),
     Center(
       child: ArrangeSeat(),
+    ),
+    Center(
+      child: RoomDetails(),
     ),
     const Center(
       child: ClassList(),
@@ -36,6 +40,10 @@ class _MainViewState extends State<MainView> {
     SideNavigationBarItem(
       icon: Icons.settings,
       label: 'Create Room ',
+    ),
+    SideNavigationBarItem(
+      icon: Icons.settings,
+      label: 'Room Table Design',
     ),
   ];
   RxInt selectedIndex = 0.obs;
